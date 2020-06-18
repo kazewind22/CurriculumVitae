@@ -1,0 +1,209 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+% \moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+\usepackage[T1]{fontenc}
+% character encoding
+\usepackage[utf8x]{inputenc}                   % replace by the encoding you are using
+\usepackage[italian]{babel}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+\fancyfoot[RE,LO]{\footnotesize } % other info in "inner" position of footer line
+
+% personal data
+\firstname{Meng-Yuan}
+\familyname{\\ \\Yang}
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{Paul-Feyerabend-Hof 5}{8049 Zurich, Switzerland}     % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\mobile{(+41)~78~734~44~18}                    % optional, remove the line if not wanted
+%\fax{312 996 1491}                          % optional, remove the line if not wanted
+\email{meng-yuan.yang@outlook.com}               % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[84pt]{pic_enhached.jpg}          % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\photo[90pt][1pt]{pic/helper.jpg}
+
+%\quote{"Success is the ability to go from failure to failure without losing your enthusiasm." -- Winston Churchill}                 % optional, remove the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\setlength{\hintscolumnwidth}{3cm}
+\begin{document}
+\maketitle
+
+\vspace{-10mm}
+
+%Section
+\section{Info}
+\cvline{}{
+    \begin{tabular*}{0.75\textwidth}{l c l c l c l}
+        Date of Birth   & $\quad$ & 21.09.1993 & $\qquad\qquad$ & Nationality & $\quad$ & Taiwan \\
+        Civil Status    &         & Single     &          & Residence permit      &        & B \\
+        %residence status Permit B
+        LinkedIn          &       & \multicolumn{5}{l}{\color{blue}\url{https://www.linkedin.com/in/mengyuan-yang/}}\\
+        Github          &       & \multicolumn{5}{l}{\color{blue}\url{https://github.com/kazewind22}}
+    \end{tabular*}
+}
+%\cvcomputer{Date of Birth}{21. Sep. 1993}{Citizenship}{Taiwan}
+%\cvcomputer{Civil Status}{Single}{Gender}{Male}
+%\cvline{LinkedIn}{\url{https://www.linkedin.com/in/mengyuan-yang/}}
+%\cvcomputer{Blog}{\small \url{http://ntrpivan.blogspot.com}\normalsize}{Skype}{\small ivan.ntrp}
+
+%\vspace{-4mm}
+
+%Section
+%\section{Desidered Employment and Current Skills}
+%\cvline{}{\Large System Administrator, DBA, Programmer, Consultant}
+%\cvline{}{\small Over the years, thanks to my thirst for knowledge, I have gained extensive experience in computer science ranging from operating systems to programming languages ​​and platforms upon which the latter are based. Along this path I have continued to improve my approach to problems always trying to implement optimal, generalized and reusable solutions (OOP, Design Patterns). In some academic work opportunities I've been able to demonstrate excellent teamwork skills and capability to collaborate with external groups. Another virtue I possess is the ability to solve almost any computer problem thanks to the excellent information gathering skills and the many years of experience in the computer science field.}
+\section{Education}
+\cventry{09.2017 -- Present}{M.Sc. in Computer Science}{}{}{}
+%{Courses: Machine Learning, Natural Language Understanding, GPA: 5.4/6 \\
+{ETH Z{\"u}rich -- Z\"urich, Switzerland
+\begin{itemize}%
+    \item Focus: \textbf{Machine Learning}, Deep Learning, Distributed Computing; GPA: 5.4/6
+    \item Master thesis: ``Meta-SGD: A Unified Algorithm of Distributed SGD''
+    \item Expected Graduation Summer of 2020
+\end{itemize}
+}
+%{Focus areas: Machine Learning, Data Mining, Recommender System}  % arguments 3 to 6 can be left empty
+\cventry{09.2012 -- 06.2016}{B.Sc. in Computer Science and Information Engineering}{}{}{}
+{National Taiwan University -- Taipei, Taiwan
+    \begin{itemize}
+        \item GPA: 4.21/4.3 (major), 4.11/4.3 (overall), Rank: 5\textsuperscript{th} out of 104
+        \item Honors: two times Academic Presidential Award %(awarded to top 5\% students)
+    \end{itemize}
+}
+
+%\vspace{-3mm}
+
+%Section
+\section{Experience}
+
+\cventry{08.2019 -- 03.2020}{Master thesis}{\small ETH Z\"urich}{\small Z\"urich}{\small Switzerland}
+{\textbf{Scalable Parallel Computing Lab}, \emph{Supervisor: Prof. T. Hoefler, Dr. T. Ben-Nun}
+\begin{itemize}%
+    \item Reviewed and summarized 19 Distributed Stochastic Gradient Descent (DSGD) algorithms, commonly used to train large-scale Deep Neural Networks (DNN).
+    \item Proposed a unified abstraction of DSGD algorithms that defined algorithms with computation networks among \emph{learner}s and \emph{updater}s.
+\end{itemize}
+}
+
+\cventry{09.2018 -- 01.2019}{Research Intern}{\small Huawei}{\small Shenzhen}{\small China}
+{\textbf{Recommender System Team}, Noah's Ark Lab, \emph{Advisor: Dr. Zhenhua Dong}
+\begin{itemize}%
+    \item Conducted an A/B test in the online advertising system and verified the selection bias in the conventional binary classification approach in click-through rates (CTR) prediction.
+    \item Proposed a framework for counterfactual CTR prediction and improved 12\% AUC score by considering non-displayed events to alleviate selection bias. %and alleviating the selection bias.% and performing 12\% better than conventional CTR models.
+    \item Introduced and implemented Block Coordinate Decent algorithm that successfully tackle the failure of SGD on handling non-displayed events.
+\end{itemize}
+}
+
+\cventry{07.2018 -- 08.2018}{Research Intern}{\small WorldQuant}{\small Taipei}{\small Taiwan}{
+\begin{itemize}%
+    \item Developed and examined trading signals (alphas) using mathematical models and large-scale backtesting datasets through the WebSim research platform.
+\end{itemize}
+}
+
+%\subsection{Vocational}
+%\cventry{07.2016 -- 07.2017}{Administrative Cadre}{\small Ministry of Education Taiwan}{\small Taipei}{}{Substitute Military Service.
+%\begin{itemize}%
+%\item Manage about 90 draftees according to administrative guidelines for alternative servicemen.
+%\end{itemize}
+%}
+
+\cventry{09.2014 -- 06.2016}{Research Assistant}{\small National Taiwan University}{\small Taipei}{\small Taiwan}
+{\textbf{Machine Learning and Data Mining Group}, \emph{Advisor: Prof. Chih-Jen Lin}
+\begin{itemize}%
+%\item Distributed LIBLINEAR-CDBLOCK experiments on a 3TB dataset (splice-site).\href{https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/docs/splice-site/splice_document.pdf}{\color{blue}[link]}
+\item Contributed to the development of LIBMF, an efficient Matrix Factorization open-source library,
+    using \textbf{OpenMP} and \textbf{SIMD instructions} to utilize the computation power of modern multi-core machines.
+\item Proposed alternating Newton method for solving a multi-block convex reformulation of \textbf{Factorization Machine} and successfully reduced training time by more than \textbf{90\%}.
+\end{itemize}
+}
+
+\cventry{09.2015 -- 01.2016}{Teaching Assistant}{\small National Taiwan University}{\small Taipei}{\small Taiwan}
+{\textbf{Machine Learning Class}, \emph{Instructor: Prof. Hsuan-Tien Lin}
+%\begin{itemize}
+%\item %Responsible for grading both theory problems and implementation coding problems
+%Answered questions and encouraged discussion about course/homework materials on the \textbf{Coursera} forum and in TA hour.
+%\end{itemize}
+}
+
+%\vspace{-3mm}
+
+%Section
+\section{Publications}
+\cvline{2019}{\textbf{Improving Ad Click Prediction by Considering Non-displayed Events} Third author; ACM CIKM, 2019. \href{https://www.csie.ntu.edu.tw/~cjlin/papers/occtr/ctr_oc.pdf}{\color{blue}[pdf]}}
+\cvline{2019}{\textbf{One-class Field-aware Factorization Machines for Recommender Systems with Implicit Feedbacks}. Second author; Technical report, 2019. \href{https://www.csie.ntu.edu.tw/~cjlin/papers/ocffm/imp_ffm.pdf}{\color{blue}[pdf]}}
+\cvline{2018}{\textbf{An Efficient Alternating Newton Method for Learning Factorization Machines}. Third author; ACM TIST, 2018. \href{http://www.csie.ntu.edu.tw/~cjlin/papers/fm/scalefm.pdf}{\color{blue}[pdf]}}
+\cvline{2016}{\textbf{LIBMF: A Library for Parallel Matrix Factorization in Shared-memory Systems}. Third author; JMLR, 2016. \href{http://www.jmlr.org/papers/volume17/15-471/15-471.pdf}{\color{blue}[pdf]}}
+
+%Section
+\section{Selected Projects}
+%\cvline{Fall 2017}{\textbf{Machine Learning}}
+%\cvlistitem{Medical image processing on three-dimensional MRI to classify cognitive health status with 87.0\% accuracy.}
+%\cvlistitem{Multi-class classification of electrocardiogram time series with F1 score 0.777.}
+
+%\cvline{Fall 2017}{\textbf{Data Mining}}
+%\cvlistitem {Implement state-of-the-art algorithms on MapReduce framework.}
+%\cvlistitem {Including: Locality Sensitive Hashing, Online SVM with Random Fourier Features, large-scale Clustering with Coreset sampling, and Contextual-Bandit with upper confidence bound.}
+\cvline{07.2019 -- 08.2019}{{\textbf{Deep500}} \href{https://github.com/deep500/deep500}{\color{blue}[Github]}}
+\cvitem{}{This is high-performance computing (HPC) benchmarking library for deep neural networks. I contributed to a Video Action Recognition prototype by adding the UCF101 dataset and implementing a Long-term Recurrent Convolutional Networks (LRCN) with ResNet and LSTM.}
+
+\cvline{04.2017}{\textbf{Search Engine for PTT}}
+\cvitem{}{A search engine for PTT, Taiwan's largest Reddit-like forum. Combining Jieba Chinese text segmentation, Open Chinese Convert library, and Gensim Word2Vec models, the system recommends related articles based on Word2Vec similarity and tf-idf model.}
+%\cvitem{}{A search engine on PTT, Taiwan's Reddit-like forum, the largest terminal-based bulletin board system (BBS) based in Taiwan. Combined Jieba Chinese text segmentation, Open Chinese Convert library, and Gensim Word2Vec models. Recommends related articles based on Word2Vec similarity and Tf-Idf model.}
+
+%Section
+\section{Technical Skills}
+\cvline{Programming}{C/C++, Python, Matlab, Shell Script, SQL, HTML, CSS, JavaScript}
+\cvline{Toolkit}{Git, PyTorch, TensorFlow, OpenMPI, OpenMP, OpenCV}
+%\cvline{Platforms}{macOS, Linux}
+%\cvline{Tools}{Vim, Git, GDB debugger}
+
+%Section
+\section{Languages}
+\cvitem{Chinese}{Mother tongue}
+\cvitem{English}{Professional working proficiency}
+%\cvitem{German}{Basic knowledge}
+%\begin{tabular}{p{67mm} p{40mm} p{40mm} p{20mm}}
+%& \textbf{Understanding} & \textbf{Speaking} & \textbf{Writing} \\
+%\end{tabular}
+%
+%\begin{tabular}{p{67mm} p{20mm} p{20mm} p{20mm} p{20mm} p{20mm}}
+%& Listening & Reading & Interaction & Production & \\
+%\end{tabular}
+%
+%\cvlanguage{Chinese}{Mother Tongue}{
+%    \begin{tabular}{ p{20mm} p{20mm} p{20mm} p{20mm} p{20mm}}
+%        C2 & C2 & C2 & C2 & C2
+%    \end{tabular}}
+%\cvlanguage{English}{Advanced}{
+%    \begin{tabular}{ p{20mm} p{20mm} p{20mm} p{20mm} p{20mm}}
+%        C1 & C2 & B2 & B2 & C1
+%    \end{tabular}}
+%\cvline{}{\small  Based on Self-assessment European language levels \href{http://europass.cedefop.europa.eu/en/resources/european-language-levels-cefr}{CEFR}}
+
+%Section
+\section{Leadership / Extracurricular}
+\cvitem{Sep 2018}{\textbf{Energy Matter: ETH Week} Collaborated with an interdisciplinary team to propose ``Community Based Green Energy'' project, aiming at lowering financial and organizational hurdles of green energy.}
+%Project CBGE (Communitiy Based Green Energy) addresses the lack of influence tenants have on the (sustainable) source of energy for their building. CBGE aims at lowering financial and organizational hurdles for landlords.}%\\
+%    \textbf{design thinking}\\
+%\textbf{ETH Week: Energy Matter}}
+%\cvitem{Jun 2014 -- Jun 2015}{\textbf{Leader and Captain in volleyball team} Successfully led and organized 26 team members to win the second place in a year-round school tournament.}
+%\cvitem{Snowboarding}{Falling in love with snowboarding at the first sight, I enjoy the effortless floats and the spectacular scenery on the mountain.}
+
+%\vspace{-3mm}
+
+%\section{Extra}
+%\small
+%\cvline{\Large qoo}{Simple PHP framework written with MVC (OOP) programming in mind that I worked on with a friend of mine.}
+%\cvlistitem{\href{https://github.com/fatmatto/qoo-framework}{GitHub Repository}}
+%\cvlistitem{\href{http://qooframework.blogspot.com/}{Qoo Framework Blog}}
+
+\end{document}
